@@ -1,18 +1,22 @@
-#page {
-    width: 960px;
+#start-page {
+    max-width: 960px;
+    height: 1000px;
+    border: 2px double grey;
     margin: 0 auto;
 }
 
-.strong-red {
-    font-weight: bolder;
-    color: red;
-}
-
-.light-blue {
-    font-weight: lighter;
-    color: blue;
-}
 
 .header {
     display: block;
+    color: red;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/map.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    border: 2px double green;
 }
