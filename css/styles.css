@@ -1,0 +1,18 @@
+#page {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.strong-red {
+    font-weight: bolder;
+    color: red;
+}
+
+.light-blue {
+    font-weight: lighter;
+    color: blue;
+}
+
+.header {
+    display: block;
+}
