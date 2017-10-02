@@ -8,7 +8,25 @@
 .header {
     border: 2px solid grey;
     display: block;
-    color: red;
+    background-color: #f8f6f3;
+}
+
+.logo {
+    display: inline;
+}
+
+.menu {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
 }
 
 .game {
