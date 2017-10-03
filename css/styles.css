@@ -1,38 +1,54 @@
-#start-page {
+.page {
     max-width: 960px;
-    height: 960px;
+    height: 800px;
     margin: 0 auto;
 }
 
-
 .header {
-    border: 2px solid grey;
     display: block;
     background-color: #f8f6f3;
 }
 
 .logo {
     display: inline;
+    margin: 10px;
 }
 
 .menu {
     display: inline;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    position: relative;
+    bottom: 45px;
+    margin-left: 50px;
 }
 
-.menu li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
-    border: 1px solid #000; /* Рамка вокруг текста */
-    padding: 3px; /* Поля вокруг текста */
+.menu__li {
+    display: inline;
+    line-height: 45px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #8de6ff;
+    border-radius: 5px;
+    width: 140px;
+    height: 45px;
+}
+
+.menu__li:hover {
+    background-color: #8a9eff;
+}
+
+.menu__li_selected {
+    background-color: #2ebb79;
+}
+
+.menu__li_selected:hover {
+    background-color: #2ebb79;
 }
 
 .game {
     width: 100%;
     height: 100%;
-    background: url(/images/map.jpg) no-repeat scroll center;
+    background: url(/images/page-background.png);
     align-content: center;
 }
 
@@ -44,21 +60,32 @@
     height: 45px;
     line-height: 45px;
     border-radius: 45px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
     font-weight: 600;
     color: #524f4e;
-    background: white;
+    background: #8de6ff;
     box-shadow: 0 8px 15px rgba(0,0,0,.1);
     transition: .3s;
-    margin: 45% 45%;
+    margin: 35% 45%;
 }
 .game__start-link:hover {
-    background: #2EE59D;
-    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    background: #8a9eff;
     color: white;
     transform: translateY(-7px);
+}
+
+.top-list-page {
+    width: 100%;
+    height: 100%;
+    background: url(/images/page-background.png);
+    align-content: center;
+}
+
+.top-list {
+    display: inline-block;
+    margin: 20% 35%;
+    font-size: 60px;
 }
