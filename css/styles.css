@@ -2,6 +2,7 @@
     max-width: 960px;
     height: 800px;
     margin: 0 auto;
+    font-size: 25px;
 }
 
 .header {
@@ -9,9 +10,13 @@
     background-color: #f8f6f3;
 }
 
+.header__about-page-crutch {
+    margin-left: 8px;
+}
+
 .logo {
     display: inline;
-    margin: 10px;
+    margin: 20px 20px;
 }
 
 .menu {
@@ -45,14 +50,14 @@
     background-color: #2ebb79;
 }
 
-.game {
+.game-page {
     width: 100%;
     height: 100%;
     background: url(/images/page-background.png);
     align-content: center;
 }
 
-.game__start-link {
+.game-page__start-link {
     text-decoration: none;
     outline: none;
     display: inline-block;
@@ -60,7 +65,7 @@
     height: 45px;
     line-height: 45px;
     border-radius: 45px;
-    font-size: 11px;
+    font-size: 15px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
@@ -71,10 +76,14 @@
     transition: .3s;
     margin: 35% 45%;
 }
-.game__start-link:hover {
+.game-page__start-link:hover {
     background: #8a9eff;
     color: white;
     transform: translateY(-7px);
+}
+
+.about-page {
+    padding-left: 8px;
 }
 
 .top-list-page {
