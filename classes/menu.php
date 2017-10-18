@@ -12,7 +12,11 @@ class Menu
 
         foreach ($pages as $key => $value)
         {
-            echo "<li class=\"menu__li menu__li_selected\"><a href=\"index.php?page=$key\">$value</a></li>";
+            If ($page_number == $key)
+                $status = "menu__li_selected";
+            else
+                $status = "";
+            echo "<li class=\"menu__li $status\"><a href=\"index.php?page=$key\">$value</a></li>";
         }
     }
 }
